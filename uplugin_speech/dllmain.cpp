@@ -119,13 +119,6 @@ namespace WindowsVoice {
   {
     if (text)
     {
-
-		std::ofstream myfile;
-		myfile.open("speechtext.txt");
-		myfile << text;
-		myfile.close();
-
-		//text = "日本語テスト";
       int len = strlen(text) + 1;
       wchar_t *wText = new wchar_t[len];
 
